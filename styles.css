@@ -1,0 +1,528 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+
+/* Navbar styling */
+.navbar {
+  margin-left: -24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed; /* Makes the navbar fixed at the top */
+  width: 100%; /* Ensures the navbar spans the full width */
+  top: 0; /* Positions it at the very top of the page */
+  z-index: 10; /* Keeps it above other content */
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+  }
+
+  .nav-links.show {
+    margin-top: 4%;
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+  /* Make sections full viewport height */
+  .section {
+    height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    margin-bottom: 2rem;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 2rem;
+    background: #f4f4f4;
+    width: 100%;
+    height: 100vh; /* Ensure hero section takes full height of the screen */
+  }
+  
+  .hero-content {
+    display: flex;
+    max-width: 1200px; /* Prevents the content from becoming too wide */
+    width: 100%;
+    gap: 2rem; /* Space between text and image */
+    flex-wrap: wrap; /* Allows content to wrap on small screens */
+    justify-content: center; /* Center content on larger screens */
+  }
+  
+  .hero-text {
+    flex: 1;
+    text-align: left; /* Align text to the start */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  
+  /* Button Styling (make it shorter) */
+  .hero-text button {
+    height: 10%;
+    padding: 0.5rem 1rem; /* Adjust padding to make button shorter */
+    width: 35%; /* Ensure width is based on content, not 100% */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero-text button a{
+    color: #f4f4f4;
+    text-decoration: none;
+  }
+
+  .hero-text button:hover{
+    background-color: rgb(31, 97, 220);
+  }
+
+  /* Media Queries for Tablet and Small Screens */
+  
+  /* 400px */
+  @media (max-width: 400px) {
+    .hero-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center both items */
+    }
+  
+    .hero-text {
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .hero-image img {
+      width: 75%; /* Adjust image size */
+    }
+  }
+  
+  /* 500px */
+  @media (max-width: 500px) {
+    .hero-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center;
+    }
+  
+    .hero-text {
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .hero-image img {
+      width: 80%; /* Adjust image size */
+    }
+  }
+  
+  /* 700px */
+  @media (max-width: 700px) {
+    .hero-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center;
+    }
+  
+    .hero-text {
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .hero-image img {
+      width: 85%; /* Slightly larger image size */
+    }
+  }
+  
+  /* 900px */
+  @media (max-width: 9s00px) {
+    .hero-content {
+      flex-direction: row; /* Keep layout in row */
+      justify-content: space-between;
+    }
+  
+    .hero-text {
+      text-align: left; /* Left align the text */
+    }
+  
+    .hero-image img {
+      width: 90%; /* Adjust image size */
+    }
+  }
+  
+  /* 1200px */
+  @media (max-width: 1200px) {
+    .hero-content {
+      flex-direction: row; /* Keep layout in row */
+      justify-content: space-between;
+    }
+  
+    .hero-text {
+      text-align: left; /* Left align the text */
+    }
+  
+    .hero-image img {
+      width: 50%; /* Image size adjustment for large screens */
+    }
+  }
+  
+/* Services Section */
+#services {
+    margin: auto;
+    display: contents;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+  }
+  
+  #services h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+    padding: 0 1rem; /* Some padding around the cards */
+    align-items: center; /* Ensure cards are aligned vertically */
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 280px; /* Ensure the card has a minimum width */
+    max-width: 300px; /* Adjust the card size */
+    padding: 1rem;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left; /* Align text inside cards to the left */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For small screens: 320px */
+  @media (max-width: 300px) {
+    .service-cards {
+      flex-direction: column; /* Stack the cards vertically */
+      align-items: center; /* Center the cards horizontally */
+    }
+  
+    .card {
+      width: 100%; /* Ensure each card takes full width */
+      margin-bottom: 1rem; /* Space between stacked cards */
+    }
+  }
+  
+  /* For medium screens: 400px */
+  @media (max-width: 400px) {
+    .service-cards {
+      flex-direction: column; /* Stack the cards vertically */
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%; /* Ensure each card takes full width */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* For tablet screens: 700px */
+  @media (max-width: 700px) {
+    .service-cards {
+      flex-direction: column; /* Stack the cards vertically */
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%; /* Ensure each card takes full width */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* For screens between 700px and 750px */
+  @media (min-width: 701px) and (max-width: 750px) {
+    .service-cards {
+      flex-direction: row; /* Keep cards in a row */
+      justify-content: center; /* Center the cards horizontally */
+    }
+  
+    .card {
+      flex: 1;
+      min-width: 250px; /* Adjust card size for medium screens */
+      max-width: 300px;
+    }
+  }
+  
+  /* For screens between 750px and 800px */
+  @media (min-width: 751px) and (max-width: 800px) {
+    .service-cards {
+      flex-direction: row; /* Keep cards in a row */
+      justify-content: center; /* Center the cards horizontally */
+    }
+  
+    .card {
+      flex: 1;
+      min-width: 250px; /* Adjust card size for medium screens */
+      max-width: 300px;
+    }
+  }
+  
+  /* For larger screens: 900px */
+  @media (min-width: 900px) {
+    .service-cards {
+        margin: 2%;
+      flex-direction: row; /* Keep cards in a row */
+      justify-content: center; /* Center the cards horizontally */
+    }
+  
+    .card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 300px;
+    }
+  }
+  
+  /* For even larger screens: 1200px */
+  @media (min-width: 1200px) {
+    .service-cards {
+      flex-direction: row; /* Keep cards in a row */
+      justify-content: center; /* Center the cards horizontally */
+    }
+  
+    .card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 300px;
+    }
+  }
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 2rem;
+    background: #f9f9f9;
+    height: 100vh; /* Full height to ensure vertical centering */
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allow wrapping when needed */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left; /* Align text to the start */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Make the image container take full width */
+  }
+  
+  .about-image img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Maximum image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For small screens: 300px to 500px */
+  @media (max-width: 500px) {
+    .about-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center-align text and image */
+    }
+  
+    .about-image img {
+      max-width: 300px; /* Make the image smaller on mobile */
+    }
+  }
+  
+  /* For medium screens: 500px to 700px */
+  @media (max-width: 700px) {
+    .about-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center-align text and image */
+    }
+  
+    .about-image img {
+      max-width: 350px; /* Adjust image size */
+    }
+  }
+  
+  /* For tablet to laptop screens: 700px to 1200px */
+  @media (min-width: 700px) and (max-width: 1200px) {
+    .about-content {
+      flex-direction: column; /* Stack text and image vertically */
+      justify-content: center; /* Center-align both text and image */
+    }
+  
+    .about-image img {
+      max-width: 400px; /* Set max width for the image */
+    }
+  }
+  
+  /* For larger screens (laptop and up): 1200px and above */
+  @media (min-width: 1200px) {
+    .about-content {
+      flex-direction: row; /* Display content side by side */
+      justify-content: space-between; /* Space between text and image */
+    }
+  
+    .about-image img {
+      max-width: 450px; /* Increase the image size on large screens */
+    }
+  }
+          
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile screens */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center; /* Center content on small screens */
+    }
+  
+    .hero-image img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .service-cards {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .card {
+      flex: none;
+      width: 90%; /* Make cards smaller and stack vertically */
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center; /* Stack text and image */
+    }
+  
+    .about-image img {
+      width: 80%;
+      height: auto;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

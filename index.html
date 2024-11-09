@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Resume Builder</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#ser">Services</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Create Your Professional Resume Easily</h2>
+        <p>With our easy-to-use resume builder, you can create a polished, professional resume in just minutes.</p>
+        <button class="hero-button"><a href=resume.html>Get Started</a></button>
+      </div>
+      <div class="hero-image">
+        <img src="image.png" alt="Resume Builder Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section  id="services">
+    <h2 id="ser">Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Resume Templates</h3>
+        <p>Choose from various professional templates.</p>
+      </div>
+      <div class="card">
+        <h3>Instant Download</h3>
+        <p>Download your resume instantly in multiple formats.</p>
+      </div>
+      <div class="card">
+        <h3>Guided Tips</h3>
+        <p>Get helpful tips for every section of your resume.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>We are a dedicated team focused on helping job seekers create standout resumes. Our goal is to make the resume-building process as simple and effective as possible.</p>
+      </div>
+      <div class="about-image">
+        <img class="ab-image" src="about.png" alt="About Us Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Resume Builder. All rights reserved.</p>
+  </footer>
+
+<script>
+    function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+  }
+  
+</script>
+</body>
+</html>
